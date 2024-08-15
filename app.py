@@ -1,5 +1,8 @@
-import streamlit as st
-#writing simple text
+import streamlit as st 
+import pandas as pd
+
+#writing simple text 
+
 st.title("Credit Card App Adrian")
 
 # ============ Aplicación Principal  ============
@@ -23,3 +26,5 @@ if "Cargar Datos" in selected_page:
         dataset = pd.read_csv(uploaded_file)
     # Mostrar datos en una tabla
         st.write(dataset)
+        
+
